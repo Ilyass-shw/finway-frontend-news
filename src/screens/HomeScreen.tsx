@@ -6,15 +6,34 @@ import { RouteParams } from "../navigation/RootNavigator";
 import { useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import NewsList from "../components/newsList/NewsList";
-
+import SearchBar from "../components/searchBar/SearchBar";
 const HomeScreen = () => {
-    const [isLoading, setLoading] = useState(true);
-    const [NewsDays, setNewsDays] = useState(0);
-
-  const navigation = useNavigation<NativeStackNavigationProp<RouteParams>>();
-  const onProfilePress = () => {
-    navigation.navigate("Article", { article: {} });
+  type Source = {
+    id: string;
+    name: string;
   };
+
+  type article = {
+    source: Source;
+    author: any;
+    title: string;
+    description: string;
+    content: string;
+    url: string;
+    urlToImage: string;
+    publishedAt: string;
+  };
+
+  const [isLoading, setLoading] = useState(true);
+  const [NewsDays, setNewsDays] = useState(0);
+  const [topic, setTopic] = useState("");
+  const [Data, setData] = useState<article[]>([]);
+
+  const updateTopic = (topic: string) => {
+    setTopic(topic);
+    setData([]);
+  };
+  const navigation = useNavigation<NativeStackNavigationProp<RouteParams>>();
 
   const data = [
     {
@@ -69,11 +88,13 @@ const HomeScreen = () => {
   ];
 
   return (
-    <TouchableOpacity onPress={onProfilePress}>
+    <>
+      <SearchBar updateTopic={updateTopic} />
+
       <View style={styles.container}>
         <NewsList data={data} setNewsDays={setNewsDays} isLoading={isLoading} />
       </View>
-    </TouchableOpacity>
+    </>
   );
 };
 
