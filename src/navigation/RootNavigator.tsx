@@ -2,10 +2,13 @@ import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "../screens/HomeScreen";
 import ArticleScreen from "../screens/ArticleScreen";
+import { article } from "../components/articleItem/ArticleItem";
 
 export type RouteParams = {
   "All News": undefined;
-  Article: {};
+  Article: {
+    article: article;
+  };
 };
 
 const Stack = createNativeStackNavigator<RouteParams>();
