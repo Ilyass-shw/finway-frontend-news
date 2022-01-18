@@ -1,8 +1,8 @@
 import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import HomeScreen from "../screens/HomeScreen";
-import ArticleScreen from "../screens/ArticleScreen";
-import { article } from "../components/articleItem/ArticleItem";
+import  {article} from '../helpers/getNews'
+import  HomeScreen from "../screens/HomeScreen";
+import ArticleScreen  from "../screens/ArticleScreen";
 
 export type RouteParams = {
   "All News": undefined;

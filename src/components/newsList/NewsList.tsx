@@ -1,27 +1,18 @@
 import React from "react";
 import * as Random from "expo-random";
-import { ActivityIndicator, FlatList, TouchableOpacity, View } from "react-native";
+import {
+  ActivityIndicator,
+  FlatList,
+  TouchableOpacity,
+  View,
+} from "react-native";
+import { article } from "../../helpers/getNews";
+import ArticleItem from "../articleItem/ArticleItem";
 import { styles } from "./NewsListStyles";
 import { useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { RouteParams } from "../../navigation/RootNavigator";
-import ArticleItem from "../articleItem/ArticleItem";
 
-type Source = {
-  id: string;
-  name: string;
-};
-
-export type article = {
-  source: Source;
-  author: any;
-  title: string;
-  description: string;
-  content: string;
-  url: string;
-  urlToImage: string;
-  publishedAt: string;
-};
 interface NewsListProps {
   data: article[];
   setNewsDays: React.Dispatch<React.SetStateAction<number>>;
@@ -38,6 +29,7 @@ const NewsList: React.FC<NewsListProps> = ({
   const loadMoreItem = () => {
     setNewsDays((prev) => prev + 1);
   };
+
   const renderLoader = () => {
     return isLoading ? (
       <View style={styles.loaderStyle}>

@@ -1,22 +1,8 @@
 import React from "react";
 import { Image, Text, View } from "react-native";
+import { article } from "../../helpers/getNews";
 import { styles } from "./ArticleItemStyles";
 
-type Source = {
-  id: string;
-  name: string;
-};
-
-export type article = {
-  source: Source;
-  author: any;
-  title: string;
-  description: string;
-  content: string;
-  url: string;
-  urlToImage: string;
-  publishedAt: string;
-};
 interface ArticleItemProps {
   article: article;
 }
