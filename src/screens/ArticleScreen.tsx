@@ -50,7 +50,7 @@ const ArticleScreen = () => {
             style={{
               paddingHorizontal: 5,
               fontSize: 15,
-              color: "white",
+              color: "#242121",
               textAlign: "center",
             }}
           >
@@ -61,7 +61,7 @@ const ArticleScreen = () => {
             style={{
               fontSize: 17,
               fontWeight: "bold",
-              color: "white",
+              color: "#242121",
               textAlign: "center",
             }}
           >
