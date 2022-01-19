@@ -11,7 +11,7 @@ details about the article.
 
 
 ## Demo 
-To Check out demo, please install the Expo app and use it to scan the QR code from this [Link](https://ecstatic-northcutt-6f4f16.netlify.app/)
+To Check out demo, please install the Expo app and use it to scan the QR code from this [Link](https://expo.dev/@ilyass.f/finway-frontend-news)
 
 
 ## Setup 
