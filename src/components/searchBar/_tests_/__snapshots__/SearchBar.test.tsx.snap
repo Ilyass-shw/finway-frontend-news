@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBar should render 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#e6e6e6",
+    }
+  }
+>
+  <TextInput
+    allowFontScaling={true}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Search for news"
+    rejectResponderTermination={true}
+    style={
+      Object {
+        "backgroundColor": "white",
+        "borderRadius": 10,
+        "fontSize": 15,
+        "height": 60,
+        "margin": 5,
+        "marginVertical": 15,
+        "paddingHorizontal": 15,
+        "paddingVertical": 10,
+      }
+    }
+    underlineColorAndroid="transparent"
+    value=""
+  />
+</View>
+`;

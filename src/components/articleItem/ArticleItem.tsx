@@ -1,6 +1,6 @@
 import React from "react";
 import { Image, Text, View } from "react-native";
-import { article } from "../../helpers/getNews";
+import { article } from "../../types";
 import { styles } from "./ArticleItemStyles";
 
 interface ArticleItemProps {

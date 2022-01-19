@@ -3,6 +3,8 @@
     "name": "finway-frontend-news",
     "slug": "finway-frontend-news",
     "version": "1.0.0",
+    "description": "finway application listing news",
+    "privacy": "public",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -13,9 +15,7 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },

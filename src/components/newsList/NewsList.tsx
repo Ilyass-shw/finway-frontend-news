@@ -1,17 +1,17 @@
 import React from "react";
 import * as Random from "expo-random";
+import { useNavigation } from "@react-navigation/native";
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import { RouteParams } from "../../navigation/RootNavigator";
+import { article } from "../../types";
+import { styles } from "./NewsListStyles";
+import ArticleItem from "../articleItem/ArticleItem";
 import {
   ActivityIndicator,
   FlatList,
   TouchableOpacity,
   View,
 } from "react-native";
-import { article } from "../../helpers/getNews";
-import ArticleItem from "../articleItem/ArticleItem";
-import { styles } from "./NewsListStyles";
-import { useNavigation } from "@react-navigation/native";
-import { NativeStackNavigationProp } from "@react-navigation/native-stack";
-import { RouteParams } from "../../navigation/RootNavigator";
 
 interface NewsListProps {
   data: article[];
@@ -33,7 +33,7 @@ const NewsList: React.FC<NewsListProps> = ({
   const renderLoader = () => {
     return isLoading ? (
       <View style={styles.loaderStyle}>
-        <ActivityIndicator size="large" color="#aaa" />
+        <ActivityIndicator testID="loadingIcon" size="large" color="#aaa" />
       </View>
     ) : null;
   };
@@ -43,11 +43,12 @@ const NewsList: React.FC<NewsListProps> = ({
       navigation.navigate("Article", { article: item });
     };
     return (
-      <TouchableOpacity onPress={onProfilePress}>
+      <TouchableOpacity testID="article wrapper" onPress={onProfilePress}>
         <ArticleItem article={item} />
       </TouchableOpacity>
     );
   };
+
   return (
     <FlatList
       style={styles.listStyle}

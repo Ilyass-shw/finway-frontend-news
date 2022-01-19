@@ -1,6 +1,7 @@
+import React from "react";
 import { RouteProp, useRoute } from "@react-navigation/native";
 import { StatusBar } from "expo-status-bar";
-import React from "react";
+import { RouteParams } from "../navigation/RootNavigator";
 import {
   Image,
   Linking,
@@ -10,7 +11,6 @@ import {
   ScrollView,
   ImageBackground,
 } from "react-native";
-import { RouteParams } from "../navigation/RootNavigator";
 
 const ArticleScreen = () => {
   const route = useRoute<RouteProp<RouteParams>>();

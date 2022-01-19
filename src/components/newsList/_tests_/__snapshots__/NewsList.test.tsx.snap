@@ -1,0 +1,361 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsList should render data properly 1`] = `
+<RCTScrollView
+  ListFooterComponent={[Function]}
+  data={
+    Array [
+      Object {
+        "author": "Igo",
+        "content": "With Ma]",
+        "description": "Wit",
+        "publishedAt": "2022-01-11T23:40:24Z",
+        "source": Object {
+          "id": "eg",
+          "name": "Eng",
+        },
+        "title": "The",
+        "url": "http",
+        "urlToImage": "https:/",
+      },
+      Object {
+        "author": "Igo1",
+        "content": "With Ma]1",
+        "description": "Wit1",
+        "publishedAt": "2022-01-11T23:40:24Z1",
+        "source": Object {
+          "id": "eg1",
+          "name": "Eng1",
+        },
+        "title": "The1",
+        "url": "http1",
+        "urlToImage": "https:/1",
+      },
+      Object {
+        "author": "Igo1",
+        "content": "With Ma]1",
+        "description": "Wit1",
+        "publishedAt": "2022-01-11T23:40:24Z1",
+        "source": Object {
+          "id": "eg1",
+          "name": "Eng1",
+        },
+        "title": "The1",
+        "url": "http1",
+        "urlToImage": "https:/1",
+      },
+    ]
+  }
+  disableVirtualization={false}
+  getItem={[Function]}
+  getItemCount={[Function]}
+  horizontal={false}
+  initialNumToRender={10}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={10}
+  onContentSizeChange={[Function]}
+  onEndReached={[Function]}
+  onEndReachedThreshold={0}
+  onLayout={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={Array []}
+  style={
+    Object {
+      "marginHorizontal": 7,
+      "overflow": "hidden",
+      "width": "108%",
+    }
+  }
+  updateCellsBatchingPeriod={50}
+  viewabilityConfigCallbackPairs={Array []}
+  windowSize={21}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID="article wrapper"
+      >
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "white",
+              "flexDirection": "row",
+              "height": 160,
+              "marginVertical": 4,
+              "width": "90%",
+            }
+          }
+        >
+          <Image
+            source={
+              Object {
+                "uri": "https:/",
+              }
+            }
+            style={
+              Object {
+                "marginHorizontal": 9,
+                "marginVertical": 12,
+                "width": "50%",
+              }
+            }
+          />
+          <View
+            style={
+              Object {
+                "width": "80%",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "height": "60%",
+                  "marginTop": 14,
+                  "width": "53%",
+                }
+              }
+            >
+              <Text
+                ellipsizeMode="tail"
+                numberOfLines={3}
+                style={
+                  Object {
+                    "fontSize": 17,
+                    "fontWeight": "700",
+                  }
+                }
+              >
+                The
+              </Text>
+            </View>
+            <View>
+              <Text
+                style={
+                  Object {
+                    "fontSize": 14,
+                    "marginTop": 8,
+                  }
+                }
+              >
+                Eng
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID="article wrapper"
+      >
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "white",
+              "flexDirection": "row",
+              "height": 160,
+              "marginVertical": 4,
+              "width": "90%",
+            }
+          }
+        >
+          <Image
+            source={
+              Object {
+                "uri": "https:/1",
+              }
+            }
+            style={
+              Object {
+                "marginHorizontal": 9,
+                "marginVertical": 12,
+                "width": "50%",
+              }
+            }
+          />
+          <View
+            style={
+              Object {
+                "width": "80%",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "height": "60%",
+                  "marginTop": 14,
+                  "width": "53%",
+                }
+              }
+            >
+              <Text
+                ellipsizeMode="tail"
+                numberOfLines={3}
+                style={
+                  Object {
+                    "fontSize": 17,
+                    "fontWeight": "700",
+                  }
+                }
+              >
+                The1
+              </Text>
+            </View>
+            <View>
+              <Text
+                style={
+                  Object {
+                    "fontSize": 14,
+                    "marginTop": 8,
+                  }
+                }
+              >
+                Eng1
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID="article wrapper"
+      >
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "white",
+              "flexDirection": "row",
+              "height": 160,
+              "marginVertical": 4,
+              "width": "90%",
+            }
+          }
+        >
+          <Image
+            source={
+              Object {
+                "uri": "https:/1",
+              }
+            }
+            style={
+              Object {
+                "marginHorizontal": 9,
+                "marginVertical": 12,
+                "width": "50%",
+              }
+            }
+          />
+          <View
+            style={
+              Object {
+                "width": "80%",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "height": "60%",
+                  "marginTop": 14,
+                  "width": "53%",
+                }
+              }
+            >
+              <Text
+                ellipsizeMode="tail"
+                numberOfLines={3}
+                style={
+                  Object {
+                    "fontSize": 17,
+                    "fontWeight": "700",
+                  }
+                }
+              >
+                The1
+              </Text>
+            </View>
+            <View>
+              <Text
+                style={
+                  Object {
+                    "fontSize": 14,
+                    "marginTop": 8,
+                  }
+                }
+              >
+                Eng1
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+    />
+  </View>
+</RCTScrollView>
+`;

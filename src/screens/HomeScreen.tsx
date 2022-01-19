@@ -1,10 +1,10 @@
-import { StatusBar } from "expo-status-bar";
 import React, { useEffect, useState } from "react";
-
+import { StatusBar } from "expo-status-bar";
 import { StyleSheet, View } from "react-native";
 import NewsList from "../components/newsList/NewsList";
 import SearchBar from "../components/searchBar/SearchBar";
-import { article, getNews } from "../helpers/getNews";
+import { getNews } from "../helpers/getNews";
+import { article } from "../types";
 
 const Home: React.FC = () => {
   const [isLoading, setLoading] = useState(true);

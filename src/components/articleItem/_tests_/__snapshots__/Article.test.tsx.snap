@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleItem should render 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "backgroundColor": "white",
+      "flexDirection": "row",
+      "height": 160,
+      "marginVertical": 4,
+      "width": "90%",
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "uri": "https://s.yimg.com/os/creatr-uploaded-images/2022-01/c8d44190-7334-11ec-bd7d-84d991cbfb48",
+      }
+    }
+    style={
+      Object {
+        "marginHorizontal": 9,
+        "marginVertical": 12,
+        "width": "50%",
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "width": "80%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "height": "60%",
+          "marginTop": 14,
+          "width": "53%",
+        }
+      }
+    >
+      <Text
+        ellipsizeMode="tail"
+        numberOfLines={3}
+        style={
+          Object {
+            "fontSize": 17,
+            "fontWeight": "700",
+          }
+        }
+      >
+        The latest 'Belle' trailer introduces us to the film's dazzling technicolor virtual world
+      </Text>
+    </View>
+    <View>
+      <Text
+        style={
+          Object {
+            "fontSize": 14,
+            "marginTop": 8,
+          }
+        }
+      >
+        Engadget
+      </Text>
+    </View>
+  </View>
+</View>
+`;

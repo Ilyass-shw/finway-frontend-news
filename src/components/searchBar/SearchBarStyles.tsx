@@ -6,10 +6,8 @@ export const styles = StyleSheet.create({
   },
   input: {
     height: 60,
-    // padding: 5,
     margin: 5,
     backgroundColor: "white",
-    // width: "100%",
     paddingVertical: 10,
     paddingHorizontal: 15,
     borderRadius: 10,
